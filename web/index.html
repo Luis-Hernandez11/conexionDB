@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Conexion con BD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <script src="js/validacion.js"></script>
+            <H1>
+                Formulario para conexion con DB
+            </H1>
+            <br>
+            <form name="formulario" method="post" action="servlet1" onsubmit="return validar()">
+                <h2>Agregar datos</h2>
+                <br>
+                Nombre:
+                <input type="text" name="nombre" id="nombre" size="20"
+                       onkeypress="return validarL(event)" maxlength="20">
+                <br>
+                Apellido paterno:
+                <input type="text" name="appat" id="appat" size="20"
+                       onkeypress="return validarL(event)" maxlength="20">
+                <br>
+                Apellido materno:
+                <input type="text" name="apmat" id="apmat" size="20"
+                       onkeypress="return validarL(event)" maxlength="20">
+                <br>
+                Edad:
+                <input type="text" name="edad" id="edad" size="5"
+                       onkeypress="return validarL(event)" maxlength="5">
+                <br>
+                E-mail:
+                <input type="text" name="email" id="email" size="30"
+                       onkeypress="return validarC(event)" maxlength="30">
+                <br>
+                <input type="submit" value="registrar Cuenta">
+            </form>
+        </div>
+        <div>
+            <br>
+            <form method="post" action="Consulta" onsubmit="">
+                <h1>Consultar Registros</h1>
+                <input type="submit" value="Consulta">
+            </form>
+        </div>
+    </body>
+</html>
